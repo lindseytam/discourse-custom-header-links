@@ -3,20 +3,20 @@ This repo adds two new feautures to the Discourse's [sample code](https://github
 * Adds the site name next to the site logo
 * Allows users to have dropdown headers
 
-How it looks with no hover:
+How it looks with no hover:<br>
 <img src="https://github.com/lindseytam/discourse-custom-header-links/blob/master/static/header.png" width="800">
 
 
 
 
-How it looks with hover on dropwdown"
+How it looks with hover on dropwdown: <br>
 <img src="https://github.com/lindseytam/discourse-custom-header-links/blob/master/static/header-w-dropdown.png" width="800">
 
 
 ## Setup
 To install this theme, you can follow the instructions [here](https://github.com/discourse/discourse-custom-header-links). 
 
-Admins can customize the template by navigating to admin > customize > themes > Custom Header Links with Dropwdown.
+Admins can customize the template by navigating to admin > customize > themes > Custom Header Links with Dropwdown. <br>
 
 
 <img src="https://github.com/lindseytam/discourse-custom-header-links/blob/master/static/customize.png" width="800">
