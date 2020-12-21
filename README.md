@@ -3,8 +3,6 @@ This repo adds two new feautures to the Discourse's [sample code](https://github
 * Adds the site name next to the site logo
 * Allows users to have dropdown headers
 
-
-
 How it looks with no hover:
 <img src="https://github.com/lindseytam/discourse-custom-header-links/blob/master/static/header.png" width="800">
 
