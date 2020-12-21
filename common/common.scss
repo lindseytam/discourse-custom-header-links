@@ -1,39 +1,107 @@
 @import "common/foundation/variables";
-
 .d-header {
-  &.hide-menus {
-    .headerLink:not(.keep) {
-      display: none;
+    &.hide-menus {
+        .headerLink:not(.keep) {
+            display: none;
+        }
     }
-  }
+}
+
+.d-header #site-logo {
+    height: 20px;
 }
 
 .custom-header-links {
-  display: inline-flex;
-  align-items: center;
-  margin: 0;
-  .headerLink {
-    list-style: none;
-    a {
-      padding: 6px 10px;
-      color: $header_primary;
-      font-size: $font-up-1;
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    .headerLink {
+        list-style: none;
+        a {
+            padding: 6px 10px;
+            color: $header_primary;
+            font-size: $font-up-1;
+            color: #747487;
+        }
     }
-  }
 }
 
 .desktop-view .vmo,
 .mobile-view .vdo {
-  display: none !important;
+    display: none !important;
 }
 
-@if $links_position == left {
-  .custom-header-links {
-    margin-left: 1em;
-  }
-  .hide-menus {
+@if $links_position==left {
     .custom-header-links {
-      display: none;
+        margin-left: 1em;
     }
-  }
+    .hide-menus {
+        .custom-header-links {
+            display: none;
+        }
+    }
+}
+
+.ml4 {
+    margin-left: 13px;
+    border-left: 1px solid gray;
+    padding-left: 10px;
+    color: gray;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#dropdown .dropdown-content {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    background-color: white;
+    color: black;
+    min-width: 160px;
+    min-height: 64px;
+    padding: 5px 0;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    border: 1px solid rgba(0, 0, 0, .15);
+}
+
+#dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: white;
+}
+
+.dropdown-content a,
+.dropdown-content a:visited {
+    display: block;
+    font-family: 'Lato', 'Helvetica', 'Arial';
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    padding: 8px 20px;
+    text-decoration: none;
+    background-color: white;
+}
+
+.dropdown-content a:hover,
+.dropdown-content a:visited:hover {
+    background-color: #2d8cff;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+
+#dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: -5px;
+    vertical-align: middle;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    color: #747487;
 }
